@@ -41,6 +41,17 @@ let potter2 = new Book("Harry Potter and the chamber of secrets","J. K. Rowling"
 
 let potter3 = new Book("Harry Potter and the prisoner of Azkaban","J. K. Rowling", 1999, 350, 5, true, "Harry Potter", 3, "0439136350", "Scholastic",325);
 
+potter1.bookmarkedPage = 24;
+potter1.used = true;
+
+//console.table(potter1);
+
+console.table(Object.keys(potter1));
+console.log(Object.values(potter1));
+
+delete potter1.used;
+
+
 console.log(`"${potter3.title}" by ${potter3.author}`);
 
 potter3.title = "Harry Potter and the prisoner of Azkaban";
