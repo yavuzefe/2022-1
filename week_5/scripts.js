@@ -1,3 +1,4 @@
+/* 
 const singleBook = {
     title: "The prisoner of Azkaban",
     author: "J. K. Rowling",
@@ -58,3 +59,71 @@ potter3.title = "Harry Potter and the prisoner of Azkaban";
 console.log(`"${potter3["title"]}" by ${potter3["author"]}`);
 
 console.log(potter1["loadBookmarkedPage"]());
+*/
+
+var topics = ["HTML","CSS","JS"];
+topics.push('git');
+topics[15] = "CLI";
+topics[12] = "Github";
+// array method to add items at the end of the list
+topics.push('React');
+// array method to remove item from the list
+topics.pop('React');
+// array method to remove first item from the list
+topics.shift();
+topics[2] = "jQuery"; 
+// array method to remove specific item from the list, in that case index 2
+topics.splice(2,1);
+
+console.log(topics[16]);
+console.table(topics);
+
+var skills = [
+    ['JavaScript','Python','R'],
+    ['VSC','Github','ABC']
+]
+console.table(skills);
+console.table(skills[1]);
+console.log(skills[1][1]);
+
+skills = [
+    {
+        frontend: 'JavaScript',
+        backend: ['JavaScript','Python'],
+        dataScience: ['Python','R']
+    }, 
+    {
+        editor: 'VSC',
+        versionControl: ['Github','git']
+    }
+]
+
+console.log(skills[1].editor);
+console.log(skills[1]['editor']);
+
+var topics2 = new Array(3);
+topics2[0] = "HTML";
+topics2[1] = "CSS";
+topics2[2] = "JS";  
+
+console.log(topics2[3]);
+
+
+// array method to merge two lists
+let mergedTopics = topics.concat(topics2);
+mergedTopics.sort();
+console.table(mergedTopics);
+
+var topics3 = [];
+console.log(topics.length);
+console.log(topics2.length);
+console.log(topics3.length);
+
+topics.forEach(topic => console.log(topic));
+
+for(let i = 0; i < topics.length; i++){
+    if(topics[i] !== undefined){
+        console.log(topics[i]);
+    }
+}
+
