@@ -12,7 +12,8 @@ const book = {
     bookmarkedPage: 325,
     loadBookmarkedPage: function(){
         return this.bookmarkedPage;
-    }
+    },
+    staticArrowFunction: () => "I am a static return value."
 };
 
 console.log(`"${book.title}" by ${book.author}`);
