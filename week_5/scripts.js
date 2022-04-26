@@ -59,7 +59,7 @@ potter3.title = "Harry Potter and the prisoner of Azkaban";
 console.log(`"${potter3["title"]}" by ${potter3["author"]}`);
 
 console.log(potter1["loadBookmarkedPage"]());
-*/
+
 
 var topics = ["HTML","CSS","JS"];
 topics.push('git');
@@ -125,5 +125,46 @@ for(let i = 0; i < topics.length; i++){
     if(topics[i] !== undefined){
         console.log(topics[i]);
     }
+}
+
+Exercise: Mad Lib
+Do your Mad Lib exercise again:
+Create a simple mad-lib program that prompts for a noun, a verb, an adverb, and an adjective and injects those into a story that you create.
+
+Write a function and store the variables in an array - or better an object?
+
+Exercise: Fortune Teller
+Do the Fortune Teller again but this time with a object.
+Write a function named tellFortune that:
+
+takes 4 arguments: number of children, partner's name, geographic location, job title.
+outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
+Call that function 3 times with 3 different values for the arguments.
+Exercise: Your top choices
+Create an array to hold your top choices (colors, presidents, whatever).
+For each choice, log to the screen a string like: "My #1 choice is blue."
+Change your top choices into objects, e.g. presidents with name, year of presidency, etc as properties.
+Work on your project
+© 2022 Powercoders
+
+Exercise: 
+Your top choices 
+1. Create an array to hold your top choices (colors, presidents, whatever). 
+2. For each choice, log to the screen a string like: "My #1 choice is blue." 
+3. Change your top choices into objects, e.g. presidents with name, year of presidency, etc as properties.
+
+
+let favoriteAnimals = ['monkey','lion','panda','cat','falcon'];
+favoriteAnimals.forEach(function(animal,index){
+    console.log(`My #${index+1} favorite animal is ${animal}.`);
+});
+favoriteAnimals.forEach((animal,index) => {
+    console.log(`My #${index+1} favorite animal is ${animal}.`);
+});
+*/
+
+let favoriteAnimals = ['monkey','lion','panda','cat','falcon'];
+for(let i = 0; i < favoriteAnimals.length; i++){
+    console.log(`My #${i+1} favorite animal is ${favoriteAnimals[i]}.`);
 }
 
