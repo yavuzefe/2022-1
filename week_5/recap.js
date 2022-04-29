@@ -32,7 +32,6 @@ for(let animal of animals){
 for(let x in animals){
     console.log(animals[x]);
 }
-*/
 let person = {
     lastName: 'Koenig',
     firstName: 'Susanne',
@@ -100,4 +99,40 @@ function calculate(number1, number2, operator){
     } else {
         return 'This is not a valid operator. Please use either +, -, * or /'
     }
+}
+
+*/
+const testPerson = {
+    firstName : "John",
+    lastName  : "Doe",
+    age       : 50,
+    eyeColor  : "blue"
+};
+
+let {firstName, lastName, age} = testPerson;
+const {eyeColor} = testPerson;
+
+testPerson.firstName = 'Jane';
+
+function moveCommand(direction) {
+    var whatHappens;
+    switch (direction) {
+        case "forward":
+            break;
+            whatHappens = "you encounter a monster";
+        case "back":
+            whatHappens = "you arrived home";
+            break;
+            break;
+        case "right":
+            return whatHappens = "you found a river";
+            break;
+        case "left":
+            break;
+            return whatHappens = "you run into a troll";
+            break;
+        default:
+            whatHappens = "please enter a valid direction";
+    }
+    return whatHappens;
 }
