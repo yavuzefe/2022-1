@@ -1,0 +1,137 @@
+/** add layout styles: grid and flex */
+
+html {
+    box-sizing: border-box;
+    font-size: 0.625em;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+* {
+    color: #1d1d1b;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+body {
+    background: #f1f1f1;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    background: #ffffff;
+    padding: 1.2rem 0 0.4rem 1.2rem;
+    position: sticky;
+}
+
+header img {
+    max-width: 17rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    border-bottom: 5px solid #ffffff;
+    color: #888888;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin: 0 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 2pt;
+}
+
+nav li a:hover {
+    color: #1d1d1b;
+}
+
+nav li.active a {
+    border-bottom: 5px solid #1d1d1b;
+    color: #1d1d1b;
+}
+
+main ul {
+    list-style: none;
+    margin: 1.2rem;
+    padding: 0;
+}
+
+main a {
+    display: block;
+    position: relative;
+}
+
+main h3 {
+    background: #ffffff;
+    bottom: 1rem;
+    left: 1rem;
+    margin: 0 0 0.5rem 0;
+    padding: 1rem;
+    position: absolute;
+}
+
+main a:hover h3 {
+    padding: 1.2rem 2rem 3rem;
+    max-width: 33rem;
+    width: 93%;
+}
+
+main a:hover span {
+    display: block;
+    font-weight: 300;
+    border-bottom: 5px solid #1b1b1b;
+    font-size: 2.400em;
+    font-weight: 200;
+    line-height: 1.11;
+    padding: 0 0 0.333em 0;
+    margin: 0 0 0.417em 0;
+}
+
+main a:hover span::after {
+    bottom: 1rem;
+    content: "\2BC0 \2BC0 \2BC0";
+    display: block;
+    font-size: 1.5rem;
+    position: absolute;
+}
+
+
+footer {
+    background: #ffffff;
+    font-weight: 300;
+    padding: 1.2rem;
+}
+
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
+
+/* min-width 751px, medium screens */
+@media only screen and (min-width: 46.938em) {
+	
+}
+
+/* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) {
+	
+}
