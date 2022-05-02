@@ -32,6 +32,8 @@ header {
     background: #ffffff;
     padding: 1.2rem 0 0.4rem 1.2rem;
     position: sticky;
+    display: flex;
+    justify-content: space-between;
 }
 
 header img {
